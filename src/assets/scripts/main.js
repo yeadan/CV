@@ -10,7 +10,9 @@
  * Write any other JavaScript below
  */
 
-+( function() {
++(function () {
+  var element = document.getElementById("email");
+  element.style.fontFamily = "cursive";
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+})();

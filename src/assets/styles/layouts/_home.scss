@@ -1,17 +1,53 @@
 * {
   box-sizing: border-box;
 }
-
 body {
 
   font-family: $font-family-sans-serif;
-
-  background-color: $uoc-bg;
+  background-color: white;
   color: $uoc-corporate;
 }
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration:none;
+  color:inherit;
+}
+.header {
+  padding: 10%;
+  text-align: center;
+  background-color: $background-color;
 
-span{
-  font-weight: 700;
+}
+img {
+  border-radius: 50%;
+  width: 20em;
+}
+.content {
+  margin: 10% 0%;
+  padding: 1% 5% 7.5% 5%;
+  background-color: $background-color;
+}
+.content h2, h3 {
+  text-align: center;
+}
+.sublist {
+  padding-left: 15%;
+  margin: 0;
+}
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+i {
+  color: $icon-color;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -26,8 +62,3 @@ span{
   }
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
-}
