@@ -4,7 +4,7 @@
 body {
 
   font-family: $font-family-sans-serif;
-  background-color: white;
+  background-color: #ffffff;
   color: $body-color;
 }
 .header__enlace,
@@ -12,8 +12,8 @@ body {
 .header__enlace:active,
 .header__enlace:visited,
 .header__enlace:focus {
-  text-decoration:none;
-  color:inherit;
+  text-decoration: none;
+  color: inherit;
 }
 .header {
   padding: 10%;
@@ -30,10 +30,11 @@ body {
   padding: 1% 5% 7.5% 5%;
   background-color: $background-color;
 }
-.content h2, h3 {
+.content__h2,
+.content__h3 {
   text-align: center;
 }
-.content__lista__item__sublista {
+.content__lista--sublista {
   padding-left: 2em;
   margin: 0;
 }
@@ -49,7 +50,7 @@ body {
 .content__lista {
   display: inline-block;
   text-align: left;
-  list-style-type:none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -58,7 +59,7 @@ body {
     font-size: large;
   }
   .header {
-    padding:5%;
+    padding: 5%;
   }
   .header__titulo {
     font-size: 48px;
@@ -71,7 +72,7 @@ body {
     width: 20%;
     height: auto;
   }
- .content__lista__item__expanse {
+ .content__lista--expanse {
    display: inline-block;
    padding-right: 2em;
  }
