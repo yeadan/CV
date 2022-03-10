@@ -7,7 +7,11 @@ body {
   background-color: white;
   color: $body-color;
 }
-a, a:hover, a:active, a:visited, a:focus {
+.header__enlace,
+.header__enlace:hover,
+.header__enlace:active,
+.header__enlace:visited,
+.header__enlace:focus {
   text-decoration:none;
   color:inherit;
 }
@@ -17,7 +21,7 @@ a, a:hover, a:active, a:visited, a:focus {
   background-color: $background-color;
 
 }
-img {
+.header__imagen {
   border-radius: 50%;
   width: 20em;
 }
@@ -29,20 +33,20 @@ img {
 .content h2, h3 {
   text-align: center;
 }
-.sublist {
+.content__lista__item__sublista {
   padding-left: 2em;
   margin: 0;
 }
-.center {
+.content__center {
   text-align: center;
   align-items: center;
 }
 
-i {
+.header__icono {
   color: $icon-color;
 }
 
-ul {
+.content__lista {
   display: inline-block;
   text-align: left;
   list-style-type:none;
@@ -53,22 +57,21 @@ ul {
   body {
     font-size: large;
   }
-  h1 {
+  .header {
+    padding:5%;
+  }
+  .header__titulo {
     font-size: 48px;
     margin-top: 0;
   }
-  h2 {
+  .content__h2 {
     font-size: 32px;
   }
-  img {
+  .header__imagen {
     width: 20%;
     height: auto;
   }
- .header {
-   padding:5%;
- }
-
- .expanse ul > li {
+ .content__lista__item__expanse {
    display: inline-block;
    padding-right: 2em;
  }
