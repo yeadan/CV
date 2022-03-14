@@ -17,7 +17,7 @@ body {
 }
 .header {
   padding: 10%;
-  text-align: center;
+  @include alineado();
   background-color: $background-color;
 
 }
@@ -32,15 +32,14 @@ body {
 }
 .content__h2,
 .content__h3 {
-  text-align: center;
+  @include alineado();
 }
 .content__lista--sublista {
   padding-left: 2em;
   margin: 0;
 }
 .content__center {
-  text-align: center;
-  align-items: center;
+  @include alineado($p:center);
 }
 
 .header__icono {
@@ -53,6 +52,14 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+@media screen and (min-width: $responsiveMedWidth) {
+  .header {
+    padding: 5%;
+  }
+  .content {
+    padding-bottom: 5%;
+  }
 }
 @media screen and (min-width: $responsiveMaxWidth) {
   body {
@@ -72,8 +79,8 @@ body {
     width: 20%;
     height: auto;
   }
- .content__lista--expanse {
-   display: inline-block;
-   padding-right: 2em;
- }
+  .content__lista--expanse {
+    display: inline-block;
+    padding-right: 2em;
+  }
 }
