@@ -12,9 +12,5 @@
 
 +(function () {
   var element = document.getElementById("email");
-  if (element)
-    element.style.fontFamily = "cursive";
-  else console.log("ERROR");
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
+  element.style.fontFamily = "cursive";
 })();
